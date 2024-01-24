@@ -112,7 +112,7 @@ const About = () => {
             <div className="relative  w-full md:w-1/2 flex items-start justify-start">
               <div className="sticky top-0 xl:text-2xl md:text-xl sm:text-lg text-sm text-white">
                 <p className="  indent-7" ref={splitChar}>
-                  I'm a web developer based in Indonesia, specializing in
+                  I&apos;m a web developer based in Indonesia, specializing in
                   full-stack development and UI/UX design. My focus is on
                   creating impactful websites for companies aiming to establish
                   meaningful connections with their users. Proficient in various
@@ -124,8 +124,8 @@ const About = () => {
                   As a UI/UX designer, I prioritize crafting interfaces that
                   enhance user engagement and leave a lasting impression. I
                   believe in the power of well-designed digital experiences to
-                  elevate a brand's online presence. If you're seeking to
-                  enhance your digital footprint and make a lasting impact, I'm
+                  elevate a brand&apos;s online presence. If you&apos;re seeking to
+                  enhance your digital footprint and make a lasting impact, I&apos;m
                   here to collaborate and transform your vision into a
                   compelling online reality. 🌐💻
                 </p>

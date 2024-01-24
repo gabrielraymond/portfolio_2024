@@ -32,7 +32,7 @@ const About2 = () => {
           </div>
           <div className="relative md:hidden z-[41] mt-9  p-4">
             <p>
-              I'm a web developer based in Indonesia, specializing in full-stack
+              I&apos;m a web developer based in Indonesia, specializing in full-stack
               development and UI/UX design. My focus is on creating impactful
               websites for companies aiming to establish meaningful connections
               with their users. Proficient in various coding languages and
@@ -47,7 +47,7 @@ const About2 = () => {
               className="lg:text-2xl text-md indent-7 "
               style={{ textShadow: "4px 4px 6px #000000" }}
             >
-              I'm a web developer based in Indonesia, specializing in full-stack
+              I&apos;m a web developer based in Indonesia, specializing in full-stack
               development and UI/UX design. My focus is on creating impactful
               websites for companies aiming to establish meaningful connections
               with their users.

@@ -29,8 +29,10 @@ const SplitText = () => {
         animate="visible"
         // style={{ x: textY }}
       >
-        {"Gabriel Raymond".split("").map((char) => (
-          <motion.span variants={defaultAnimations}>{char}</motion.span>
+        {"Gabriel Raymond".split("").map((char, idx) => (
+          <motion.span variants={defaultAnimations} key={idx}>
+            {char}
+          </motion.span>
         ))}
       </motion.h1>
     </div>

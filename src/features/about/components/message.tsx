@@ -34,8 +34,10 @@ const Message = () => {
       >
         {"I design and develop engaging digital experiences that inspire and connect with people."
           .split("")
-          .map((char: string) => (
-            <span className="char opacity-0">{char}</span>
+          .map((char: string, idx: number) => (
+            <span className="char opacity-0" key={idx}>
+              {char}
+            </span>
           ))}
       </p>
     </div>

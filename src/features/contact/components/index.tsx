@@ -50,7 +50,7 @@ const Contact = () => {
         <div className=" md:col-span-2">
           <h2 className="text-[3vw] font-semibold leading-tight">
             Have an awesome idea? <br />
-            Let's bring it to life
+            Let&apos;s bring it to life
           </h2>
           <p className="text-[2vw]">
             I am currently available for freelance or fulltime job.
