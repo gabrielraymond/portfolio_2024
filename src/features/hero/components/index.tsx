@@ -2,8 +2,6 @@
 import gsap from "gsap";
 import Image from "next/image";
 import React, { useEffect, useLayoutEffect, useRef } from "react";
-import { useLocomotiveScroll } from "react-locomotive-scroll";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { motion, useScroll, useTransform } from "framer-motion";
 import NameAnimate from "./NameAnimate";
 
