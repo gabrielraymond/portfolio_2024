@@ -31,12 +31,12 @@ const Hero = () => {
 
   return (
     <div
-      className="relative w-full flex justify-center h-screen overflow-hidden"
+      className="relative w-full flex justify-center min-h-screen overflow-hidden"
       id="home"
       ref={ref}
     >
       <motion.div
-        className={`absolute h-[140vh] w-full filter brightness-[60%]`}
+        className={`absolute h-[140vh] w-full filter brightness-[60%] overflow-hidden`}
         initial={{ scale: 1 }}
         animate={{ scale: [1, 0.65] }}
         transition={{ duration: 1 }}
@@ -53,9 +53,9 @@ const Hero = () => {
         />
       </motion.div>
 
-      <div className="mt-[5vh] flex items-center justify-center">
+      <div className="mt-[5vh] flex items-center justify-center ">
         <motion.div
-          className="absolute w-[350px] h-[475px] brightness-[80%]"
+          className="absolute w-[350px] h-[475px] brightness-[80%] scale-[60%] sm:scale-100"
           // data-scroll
           // data-scroll-speed="0.3"
           initial={{ height: "0px" }}

@@ -59,22 +59,22 @@ const Portfolio = () => {
             />
           </div>
           <div className="py-3">
-            <div className="my-4 flex gap-2">
-              <span className="px-3 py-1 border border-white rounded-full">
+            <div className="my-4 flex gap-2 max-w-full flex-wrap">
+              <div className="px-3 py-1 border border-white rounded-full">
                 2024
-              </span>
-              <span className="px-3 py-1 border border-white rounded-full">
+              </div>
+              <div className="px-3 py-1 border border-white rounded-full">
                 Nextjs
-              </span>
-              <span className="px-3 py-1 border border-white rounded-full">
+              </div>
+              <div className="px-3 py-1 border border-white rounded-full">
                 Reactjs
-              </span>
-              <span className="px-3 py-1 border border-white rounded-full">
+              </div>
+              <div className="px-3 py-1 border border-white rounded-full">
                 Tailwind
-              </span>
-              <span className="px-3 py-1 border border-white rounded-full">
+              </div>
+              <div className="px-3 py-1 border border-white rounded-full">
                 Zustand
-              </span>
+              </div>
             </div>
             <h1 className="text-4xl font-bold">Travel Experience with BTN</h1>
             <h2 className="text-2xl">Frontend Development</h2>

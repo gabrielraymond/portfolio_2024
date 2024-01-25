@@ -29,7 +29,7 @@ const Message = () => {
   return (
     <div className="relative w-full min-h-screen z-30 px-8 lg:px-28 pt-28 pb-10 flex items-center leading-normal ">
       <p
-        className="summary text-[5vw] text-[#F0E3CA] leading-[1.25em] md:leading-[1.08em]  overflow-hidden  "
+        className="summary text-5xl md:text-7xl text-[#F0E3CA] leading-[1.25em] md:leading-[1.08em]  overflow-hidden  "
         ref={ref}
       >
         {"I design and develop engaging digital experiences that inspire and connect with people."

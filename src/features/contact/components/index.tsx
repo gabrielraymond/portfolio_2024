@@ -3,6 +3,29 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import TitleHeader from "@/components/title/TitleHeader";
 
+const dataSocialMedia = [
+  {
+    id: 1,
+    title: "Linkedin",
+    url: "https://www.linkedin.com/in/gabriel-dimpudus/",
+  },
+  {
+    id: 2,
+    title: "Instagram",
+    url: "https://www.instagram.com/gabrielraymond_",
+  },
+  {
+    id: 3,
+    title: "X",
+    url: "https://twitter.com/GabrielR1596",
+  },
+  {
+    id: 4,
+    title: "Github",
+    url: "https://github.com/gabrielraymond",
+  },
+];
+
 const Contact = () => {
   const form: any = useRef(null);
   const [formData, setFormData] = useState({
@@ -45,7 +68,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full min-h-screen text-[#F0E3CA] px-[5%] py-24" id="contact">
+    <div
+      className="w-full min-h-screen text-[#F0E3CA] px-[5%] py-24"
+      id="contact"
+    >
       {/* <h1 className="text-[8vw] font-bold">Contact</h1> */}
       <TitleHeader text="contact" />
       <div className="grid grid-cols-4 lg:grid-cols-3 gap-8">
@@ -113,26 +139,13 @@ const Contact = () => {
           <div className="mb-12">
             <h2 className="text-4xl font-bold pb-6">My Digital Spaces</h2>
             <ul>
-              <li className="mb-2">
-                <Link href={""} className="text-2xl font-medium">
-                  <span>Github</span>
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link href={""} className="text-2xl font-medium">
-                  <span>LinkedIn</span>
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link href={""} className="text-2xl font-medium">
-                  <span>Instagram</span>
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link href={""} className="text-2xl font-medium">
-                  <span>Facebook</span>
-                </Link>
-              </li>
+              {dataSocialMedia.map((item: any) => (
+                <li className="mb-1" key={item.id}>
+                  <Link href={item.url} className="text-2xl font-medium hover:text-white">
+                    <span>{item.title}</span>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="mb-12">

@@ -1,11 +1,27 @@
-import React, { useState } from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 import Message from "./message";
 import Image from "next/image";
 import Object3d from "./Object3d";
 import TitleHeader from "@/components/title/TitleHeader";
+import gsap from "gsap";
 
 const About2 = () => {
   const [MouseMovement, setMouseMovement] = useState(0);
+
+  const imageRef = useRef(null);
+  useLayoutEffect(() => {
+    let tl = gsap.timeline({defaults:{ease: 'power2'},
+      scrollTrigger: {
+        trigger: imageRef.current,
+        start: "top center",
+        end: "bottom center",
+        markers: true,
+        
+      },
+    });
+
+    tl.fromTo(imageRef.current, { y: 100 }, { y: 0 });
+  }, []);
   return (
     <div className="text-[#F0E3CA]" id="about">
       <Message />
@@ -24,7 +40,7 @@ const About2 = () => {
           <div className="relative flex justify-center ">
             <div
               className="relative w-full md:w-1/2  md:h-[60vw] h-[70vh] max-h-[800px] z-20 rounded-xl  shadow-[10px_10px_15px_2px_rgba(0,0,0,0.5)]"
-              // ref={imageRef}
+              ref={imageRef}
             >
               <Image
                 alt=""
