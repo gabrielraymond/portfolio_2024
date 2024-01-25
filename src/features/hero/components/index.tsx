@@ -31,7 +31,7 @@ const Hero = () => {
 
   return (
     <div
-      className="relative w-full flex justify-center h-screen"
+      className="relative w-full flex justify-center h-screen overflow-hidden"
       id="home"
       ref={ref}
     >

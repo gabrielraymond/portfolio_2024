@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import TitleHeader from "@/components/title/TitleHeader";
 
 const Contact = () => {
   const form: any = useRef(null);
@@ -44,10 +45,11 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full min-h-screen text-white px-[5%]" id="contact">
-      <h1 className="text-[8vw] font-bold">Contact</h1>
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-8">
-        <div className=" md:col-span-2">
+    <div className="w-full min-h-screen text-[#F0E3CA] px-[5%] py-24" id="contact">
+      {/* <h1 className="text-[8vw] font-bold">Contact</h1> */}
+      <TitleHeader text="contact" />
+      <div className="grid grid-cols-4 lg:grid-cols-3 gap-8">
+        <div className="col-span-4 md:col-span-2">
           <h2 className="text-[3vw] font-semibold leading-tight">
             Have an awesome idea? <br />
             Let&apos;s bring it to life
@@ -58,22 +60,22 @@ const Contact = () => {
           <div className="mt-8">
             <form onSubmit={sendEmail} ref={form}>
               <div className="flex gap-4">
-                <div className="py-2 px-4 border-b-2 w-[50%]">
+                <div className="py-2 px-4 border-b-2 border-[#F0E3CA] w-[50%]">
                   <input
                     name="name"
                     type="text"
-                    className="w-full bg-transparent text-white text-lg outline-none"
+                    className="w-full bg-transparent text-[#F0E3CA] text-lg outline-none"
                     placeholder="Your Name"
                     autoComplete="off"
                     value={formData.name}
                     onChange={handleChange}
                   />
                 </div>
-                <div className="py-2 px-4 border-b-2 w-[50%]">
+                <div className="py-2 px-4 border-b-2 border-[#F0E3CA] w-[50%]">
                   <input
                     name="email"
                     type="email"
-                    className="w-full bg-transparent text-white text-lg outline-none"
+                    className="w-full bg-transparent text-[#F0E3CA] text-lg outline-none"
                     placeholder="Your Email"
                     autoComplete="off"
                     value={formData.email}
@@ -81,10 +83,10 @@ const Contact = () => {
                   />
                 </div>
               </div>
-              <div className="py-2 px-4 border-b-2 my-8">
+              <div className="py-2 px-4 border-b-2 border-[#F0E3CA] my-8">
                 <textarea
                   name="message"
-                  className="w-full h-[150px] bg-transparent text-white text-lg outline-none"
+                  className="w-full h-[150px] bg-transparent text-[#F0E3CA] text-lg outline-none"
                   placeholder="Meassage"
                   autoComplete="off"
                   value={formData.message}
@@ -92,7 +94,7 @@ const Contact = () => {
                 />
               </div>
               <button
-                className="px-6 py-3 bg-[#DC5F00] rounded-full font-semibold"
+                className="px-6 py-3 bg-[#FF8303] rounded-full font-semibold"
                 type="submit"
               >
                 Send Message
@@ -100,7 +102,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className=" col-span-1">
+        <div className=" col-span-4 lg:col-span-1 text-center lg:text-start flex-col justify-center lg:justify-start">
           <div className="mb-12">
             <h2 className="text-4xl font-bold pb-6">Contact Details</h2>
             <p className="text-2xl font-medium mb-3">

@@ -1,5 +1,4 @@
 "use client";
-import About from "@/features/about/components";
 import Hero from "@/features/hero/components";
 import Message from "@/features/about/components/message";
 import { useEffect, useRef, useState } from "react";
@@ -9,6 +8,7 @@ import StickerPlanes from "@/features/about/components/StickerPlanes";
 import Contact from "@/features/contact/components";
 import About2 from "@/features/about/components/about";
 import Services from "@/features/about/components/services";
+import Footer from "@/features/footer/components";
 
 export default function Home() {
   // const [MouseMovement, setMouseMovement] = useState<any>(0);
@@ -29,7 +29,7 @@ export default function Home() {
       //   setMouseMovement(e);
       // }}
     >
-      <div ref={HeroRef}>
+      <div ref={HeroRef} id="main">
         <Hero />
         {/* <Message /> */}
         {/* <About /> */}
@@ -37,6 +37,7 @@ export default function Home() {
         <Services />
         <Portfolio />
         <Contact />
+        <Footer />
       </div>
     </main>
   );
