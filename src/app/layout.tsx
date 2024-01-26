@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     "nextjs",
     "reactjs",
   ],
+  icons:"/logo/logo_short.png",
   openGraph: {
     title: "Gabriel Raymond",
     description:
