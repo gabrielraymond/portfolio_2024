@@ -18,7 +18,7 @@ const Portfolio = () => {
           rel="noopener noreferrer"
           className="col-span-4 "
         >
-          <div className="relative w-full h-[600px]  overflow-hidden group rounded-lg">
+          <div className="relative w-full h-[400px] xl:h-[600px]  overflow-hidden group rounded-lg">
             <Image
               src={"/projects/travelxperience.jpg"}
               alt=""
@@ -55,7 +55,7 @@ const Portfolio = () => {
           rel="noopener noreferrer"
           className="col-span-4 xl:col-span-3"
         >
-          <div className="overflow-hidden group w-full h-[600px] xl:h-[400px]  relative  rounded-lg">
+          <div className="overflow-hidden group w-full h-[400px] xl:h-[400px]  relative  rounded-lg">
             <Image
               src={"/projects/alba.jpg"}
               alt=""
@@ -67,7 +67,7 @@ const Portfolio = () => {
           <div className="py-3 relative">
             <div className="my-4 flex gap-2">
               <span className="px-3 py-1 border border-white rounded-full">
-                2023
+                2022
               </span>
               <span className="px-3 py-1 border border-white rounded-full">
                 Reactjs
