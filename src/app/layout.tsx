@@ -33,12 +33,12 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
-  twitter: {
-    title: "Gabriel Raymond",
-    description:
-      "Explore a showcase of my web development and design projects that seamlessly blend innovation with functionality. Dive into a portfolio of unique, custom-coded websites, meticulously crafted for optimal performance and memorable user experiences.",
-    images: { url: "/logo/logo-seo.jpg", alt: "gabriel raymond" },
-  },
+  // twitter: {
+  //   title: "Gabriel Raymond",
+  //   description:
+  //     "Explore a showcase of my web development and design projects that seamlessly blend innovation with functionality. Dive into a portfolio of unique, custom-coded websites, meticulously crafted for optimal performance and memorable user experiences.",
+  //   images: { url: "/logo/logo-seo.jpg", alt: "gabriel raymond" },
+  // },
 };
 
 export default function RootLayout({
@@ -49,7 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* <link rel="icon" href="/logo/logo_short.png" sizes="any" /> */}
+        <link rel="icon" href="/logo/logo_short.png" sizes="any" />
         {/* <HeadMetaData metaDescription="Travel Experience" /> */}
       </head>
       <body className={nato.className}>
