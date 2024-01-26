@@ -15,7 +15,7 @@ const About2 = () => {
         trigger: imageRef.current,
         start: "top center",
         end: "bottom center",
-        markers: true,
+        // markers: true,
         
       },
     });

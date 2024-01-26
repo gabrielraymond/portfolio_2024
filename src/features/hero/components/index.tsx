@@ -72,7 +72,7 @@ const Hero = () => {
           />
         </motion.div>
         <motion.div
-          className="absolute w-[350px] h-[475px] brightness-[100%] z-20 bg-[rgba(0,0,0,0.2)]"
+          className="absolute w-[350px] h-[475px] brightness-[100%] z-20 bg-[rgba(0,0,0,0.2)] scale-[60%] sm:scale-100"
           // data-scroll
           // data-scroll-speed="0.3"
           initial={{ height: "0px" }}
